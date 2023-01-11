@@ -1,2 +1,2 @@
 # Ignore terraform files
-.terraform*
+*terraform*

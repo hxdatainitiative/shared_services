@@ -1,9 +1,9 @@
 locals {
-  initiative        = "Data Science & Engineering"
+  initiative        = "Data Science and Engineering"
   owner             = "fmeza@hexacta.com"
   manager           = "Fernando Meza - Jonas Valleta"
   backend_key       = "data_initiative/templates"
-  delete_protection = false
+  delete_protection = "False"
 
   ### Buckets to create ### 
   s3_buckets = {
