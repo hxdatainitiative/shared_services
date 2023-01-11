@@ -5,7 +5,7 @@ provider "aws" {
       Initiative       = local.initative
       Owner            = local.owner
       Manager          = local.manager
-    #   BackendBucket    = data.backend_bucket
+      BackendBucket    = "${local.s3_buckets_prefix}-backend-bucket"
       BackendKey       = local.backend_key
       DeleteProtection = local.delete_protection
     }
