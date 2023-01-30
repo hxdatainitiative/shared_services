@@ -2,7 +2,7 @@ locals {
   initiative        = "Data Science and Engineering"
   owner             = "fmeza@hexacta.com"
   manager           = "Fernando Meza - Jonas Valleta"
-  backend_key       = "data_initiative/templates"
+  backend_key       = "data_initiative/shared_services"
   delete_protection = "False"
 
   ### Buckets to create ### 
@@ -15,9 +15,6 @@ locals {
     },
     "processed" = {
       description = "Bucket to put already cleaned and processed data"
-    },
-    "backend" = {
-      description = "Bucket to keep all terraform states for the platform"
     }
   }
   s3_buckets_prefix = "hx-datainitiative"

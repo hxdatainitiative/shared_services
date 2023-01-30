@@ -11,3 +11,11 @@ provider "aws" {
     }
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "hx-datainitiative-backend"
+    key    = "shared_services/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
